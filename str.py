@@ -3,9 +3,11 @@ def main() :
   print (x)
   print (x[-1])
   print (x[2:10])
-  print (jo(10,10,"rectangle")) #default value function
+  print (area(10,10,"rectangle")) #default value function
   pattern (4) #function
-def jo (b,h,shape='trianle'):
+  print (f"perimeter of a circle with radius 7 is {circle(7)[1]}, diameter is {circle(7)[2]} and area is {circle(7)[0]}") #multiple return value function
+  
+def area(b,h,shape='trianle'):
   if (shape == 'rectangle'):
       return b*h
   return 0.5*b*h
@@ -20,6 +22,10 @@ def pattern (n):
             for j in range (i):
                print ("*",end=" ")
             print ("\n")'''
+
+def circle(r):
+  return 22/7*r**2, 2*22/7*r, 2*r
+  #returns area, perimeter and diameter as tuple
 
 if __name__ =="__main__":
   main ()
