@@ -1,9 +1,15 @@
 '''
-* __str__(self) : takes only self as a parameter and returns a string related to the class or the instance of a class
-* @classmethod takes the first input as cls, and functions defined with @classmethods are tied to the class itself, rather than its instances,they can excess modify class-level attributes and call other methods too
+SELF IS THE FIRST PARAMETER OF EVERY METHOD DEFINED, IT REFERS TO THE CURRENT OBJ OF THE CLASS
+=> __str__(self) : takes only self as a parameter and returns a string related to the class or the instance of a class
+=> @classmethod takes the first input as cls, and functions defined with @classmethods are tied to the class itself, rather than its instances,they can excess modify class-level attributes and call other methods too
 BUT,,, You SHOULD NOT use classmethod to set getters for an inherited class
+
 @property : getter
 @'parameter'.setter : setter
+
+=>__init__(self,other parameters)is used as a constructor, it is called everytime an instance of a class is created
+
+=> super().joBhiMethodParentClass(): is used to call the parents cls's method
 '''
 
 

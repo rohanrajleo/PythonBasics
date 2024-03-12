@@ -11,5 +11,5 @@ MagicalHat.assign("Harry")
 
 
 '''
-@classmethod is used to define a method that takes 'cls' as the first input it works with the class itself rather than creating an instance of the class
+@classmethod takes the first input as cls, and functions defined with @classmethods are tied to the class itself, rather than its instances,they can excess modify class-level attributes and call other methods too
 '''
